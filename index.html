@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khalil Griffin — Projects</title>
+<meta name="description" content="Tools and projects by Khalil Griffin.">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --text: #10151c;
+    --muted: #5a6572;
+    --border: #e4e8ee;
+    --accent: #2f6df6;
+    --shadow: 0 1px 2px rgba(16,21,28,.04), 0 8px 24px rgba(16,21,28,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0f14;
+      --card: #151a22;
+      --text: #eef2f7;
+      --muted: #9aa6b4;
+      --border: #232b36;
+      --accent: #5b8bff;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 72px 24px 48px;
+    flex: 1;
+  }
+  header { margin-bottom: 40px; }
+  h1 {
+    font-size: clamp(28px, 5vw, 40px);
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 18px;
+    margin: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .card .emoji { font-size: 28px; display: block; margin-bottom: 12px; }
+  .card h2 {
+    font-size: 19px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .card p { color: var(--muted); font-size: 14.5px; margin: 0 0 12px; }
+  .card .go { color: var(--accent); font-size: 14px; font-weight: 600; }
+  footer {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Khalil Griffin</h1>
+      <p>Interactive tools &amp; side projects.</p>
+    </header>
+
+    <main class="grid">
+      <a class="card" href="https://retirement.khalilsg.dev/">
+        <span class="emoji">📈</span>
+        <h2>Retirement Monte Carlo</h2>
+        <p>Will a portfolio outlast the plan? Thousands of simulations on historical market data.</p>
+        <span class="go">Open →</span>
+      </a>
+
+      <a class="card" href="https://dmgcalc.khalilsg.dev/">
+        <span class="emoji">⚔️</span>
+        <h2>Damage Calculator</h2>
+        <p>Battle damage calculator.</p>
+        <span class="go">Open →</span>
+      </a>
+
+      <!--
+        To add a future project, copy one card block and update the
+        href, emoji, title, and description:
+
+      <a class="card" href="https://newproject.khalilsg.dev/">
+        <span class="emoji">🧪</span>
+        <h2>Project Name</h2>
+        <p>One-line description.</p>
+        <span class="go">Open →</span>
+      </a>
+      -->
+    </main>
+  </div>
+
+  <footer>
+    <a href="https://github.com/khalilsg">github.com/khalilsg</a>
+  </footer>
+</body>
+</html>
