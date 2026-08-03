@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Khalil Griffin — Projects</title>
-<meta name="description" content="Tools and projects by Khalil Griffin.">
+<meta name="description" content="Interactive tools by Khalil Griffin — a Monte Carlo retirement simulator and a competitive Pokémon damage calculator.">
 <style>
   :root {
     --bg: #f7f8fa;
@@ -57,7 +57,7 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 18px;
   }
   .card {
@@ -82,6 +82,30 @@
     letter-spacing: -0.01em;
   }
   .card p { color: var(--muted); font-size: 14.5px; margin: 0 0 12px; }
+  .card ul {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    color: var(--muted);
+    font-size: 13.5px;
+  }
+  .card li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 5px;
+  }
+  .card li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: .65;
+  }
+  .card li strong { color: var(--text); font-weight: 600; }
   .card .go { color: var(--accent); font-size: 14px; font-weight: 600; }
   footer {
     max-width: 860px;
@@ -104,14 +128,27 @@
       <a class="card" href="https://retirement.khalilsg.dev/">
         <span class="emoji">📈</span>
         <h2>Retirement Monte Carlo</h2>
-        <p>Will a portfolio outlast the plan? Thousands of simulations on historical market data.</p>
+        <p>Will a portfolio outlast the plan? Instead of assuming a flat average return, it resamples real market history — S&amp;P 500, 10-year Treasuries, and CPI inflation together, 1928–2025 — across thousands of simulated lifetimes, and reports the probability the money lasts in today's dollars.</p>
+        <ul>
+          <li><strong>Full lifecycle</strong> — saving years and retirement years on one age-based timeline, with pensions, Social Security, fees, and taxes on withdrawals</li>
+          <li><strong>Real strategies</strong> — fixed-real spending or Guyton-Klinger guardrails; a fixed stock/bond mix or a glide path</li>
+          <li><strong>Find your levers</strong> — sensitivity sweeps, a two-parameter success heatmap, and a tornado chart ranking which assumption matters most</li>
+          <li><strong>Sequence-of-returns risk</strong> — how much of the failure risk is the <em>order</em> of returns, and when you're past the danger zone</li>
+          <li><strong>Shareable &amp; private</strong> — scenarios encode into a link; private mode hides every dollar figure for screen sharing</li>
+        </ul>
         <span class="go">Open →</span>
       </a>
 
       <a class="card" href="https://dmgcalc.khalilsg.dev/">
         <span class="emoji">⚔️</span>
-        <h2>Damage Calculator</h2>
-        <p>Battle damage calculator.</p>
+        <h2>Pokémon Damage Calculator</h2>
+        <p>K Calc — a competitive <strong>Pokémon</strong> doubles toolsuite built for the Champions format. Paste a Showdown team, pick the opponent's six, and get every offensive and defensive matchup at once, recalculated live as the battle state changes.</p>
+        <ul>
+          <li><strong>Every matchup, not one</strong> — full offense and defense grids across ±6 stat stages, plus speed tiers and lead-pair scoring from Smogon usage data</li>
+          <li><strong>Battle tracker</strong> — stat stages, weather, screens, Helping Hand, and KOs update every tab in real time</li>
+          <li><strong>Team builder</strong> — slot-by-slot editor that exports a Showdown paste or loads straight into the calculator</li>
+          <li><strong>Extra tools</strong> — OHKO thresholds, base-stat comparison, a movepool/ability finder, and match history with export</li>
+        </ul>
         <span class="go">Open →</span>
       </a>
 
@@ -122,7 +159,10 @@
       <a class="card" href="https://newproject.khalilsg.dev/">
         <span class="emoji">🧪</span>
         <h2>Project Name</h2>
-        <p>One-line description.</p>
+        <p>A sentence or two on what it does and why it exists.</p>
+        <ul>
+          <li><strong>Highlight</strong> — what makes it worth opening</li>
+        </ul>
         <span class="go">Open →</span>
       </a>
       -->
