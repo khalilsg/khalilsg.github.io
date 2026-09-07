@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Khalil Griffin — Projects</title>
-<meta name="description" content="Interactive tools by Khalil Griffin — a Monte Carlo retirement simulator and a competitive Pokémon damage calculator.">
+<meta name="description" content="Interactive tools by Khalil Griffin — a Monte Carlo retirement simulator, a competitive Pokémon damage calculator, and a five-cycle voter demographic predictor.">
 <style>
   :root {
     --bg: #f7f8fa;
@@ -148,6 +148,20 @@
           <li><strong>Battle tracker</strong> — stat stages, weather, screens, Helping Hand, and KOs update every tab in real time</li>
           <li><strong>Team builder</strong> — slot-by-slot editor that exports a Showdown paste or loads straight into the calculator</li>
           <li><strong>Extra tools</strong> — OHKO thresholds, base-stat comparison, a movepool/ability finder, and match history with export</li>
+        </ul>
+        <span class="go">Open →</span>
+      </a>
+
+      <a class="card" href="https://khalilsg.github.io/voter-demographic-predictor/">
+        <span class="emoji">🗳️</span>
+        <h2>Voter Demographic Predictor</h2>
+        <p>Answer eleven demographic questions and see how a model fitted on survey microdata would have guessed your presidential vote — in 2008, 2012, 2016, 2020 and 2024, all at once. The point isn't the guess, it's the line across five cycles: the specification never changes, so when your prediction moves between years, that's the electorate moving and not the method.</p>
+        <ul>
+          <li><strong>Realignment, about you specifically</strong> — a white voter with a postgraduate degree is a different political animal in 2024 than in 2008, and the five-cycle line shows it</li>
+          <li><strong>The chart is the arithmetic</strong> — each answer's effect is a bar in log-odds against that cycle's average voter, and the bars sum <em>exactly</em> to the distance between that voter and you</li>
+          <li><strong>Every number is on the page</strong> — a coefficients table for all eleven features across sixteen years, plus a methodology page whose figures are read from the model files so they can't drift out of date</li>
+          <li><strong>Real data, stated limits</strong> — logistic regressions over 127,578 CES respondents, with party ID deliberately excluded so the demographics aren't buried, and known survey problems flagged next to the questions they affect</li>
+          <li><strong>Shareable</strong> — a profile encodes into a readable link, and preset examples are picked for actually moving across cycles rather than for being vivid</li>
         </ul>
         <span class="go">Open →</span>
       </a>
